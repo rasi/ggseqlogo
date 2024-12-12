@@ -4,3 +4,5 @@ RUN conda config --remove channels defaults
 RUN conda config --add channels bioconda
 RUN conda config --add channels conda-forge
 RUN mamba install -n R r-ggseqlogo=0.2
+
+LABEL org.opencontainers.image.source https://github.com/rasilab/ggseqlogo
